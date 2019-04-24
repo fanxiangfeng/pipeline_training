@@ -17,6 +17,6 @@ stages:
       sourceKey: url
       targetKey: SONAR_HOST
     - sourceName: sonar
-      sourceKey: token
+      sourceKey: scan_token
       targetKey: SONAR_KEY
 notification: {}
