@@ -8,7 +8,7 @@ stages:
         mvn clean install org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.0.1254:sonar \
           -Dsonar.host.url=${SONAR_HOST} \
           -Dsonar.login=${SONAR_KEY} \
-          -Dsonar.projectName=maven_scan
+          -Dsonar.projectName=maven_scan1
     env:
       NEXUS_HOST: http://192.168.81.142:30206
       NEXUS_TOKEN: admin123
@@ -17,6 +17,6 @@ stages:
       sourceKey: url
       targetKey: SONAR_HOST
     - sourceName: sonar
-      sourceKey: scan_token
+      sourceKey: token
       targetKey: SONAR_KEY
 notification: {}
