@@ -10,7 +10,7 @@ stages:
           -Dsonar.login=${SONAR_KEY} \
           -Dsonar.projectName=maven_scan1
     env:
-      NEXUS_HOST: http://repo-nexus:8081
+      NEXUS_HOST: http://repo-nexus.repo-nexus:8081
       NEXUS_TOKEN: admin123
     envFrom:
     - sourceName: sonar
